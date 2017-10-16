@@ -1,0 +1,32 @@
+.nav_bar_logo_wrapper {
+    height: 50px;
+    padding: 25px;
+    padding-left: 25px;
+    padding-bottom: 0;
+}
+
+.nav_bar_logo_wrapper img {
+    height: 25px
+}
+
+.nav_bar_user_info {
+    background: #545454;
+    height: 66px;
+    padding: 20px 5px 5px 30px;
+}
+
+.nav_bar_user_name_lbl {
+    width: 100%;
+    float: left;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.nav_bar_user_option_lbl {
+    float: left;
+    color: #90CAF9;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    cursor: pointer
+}

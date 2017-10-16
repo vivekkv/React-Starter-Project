@@ -1,0 +1,243 @@
+html,
+body,
+#root,
+.root_container {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.padding-zero {
+  padding: 0
+}
+
+.column {
+  line-height: 13px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.column .form-group input {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  height: 35px;
+  border: 0;
+  border-bottom: 1px solid #bdb8b8;
+  outline: none;
+}
+
+.column .form-group label {
+  color: #807676;
+  font-size: 14px;
+}
+
+.column .form-group .required-field {
+  color: red
+}
+
+.main_content {
+  padding: 25px
+}
+
+.nav_bar_wrapper {
+  background: #474747;
+  min-width: 260px;
+  -ms-flex: 0 100px;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+}
+
+.main_content_wrapper {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  flex: 1;
+  flex-direction: "row";
+  background: #F9F9F9
+}
+
+.form_content_wrapper {
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  min-height: 200px;
+  float: left;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0px 0px 1px 0px rgb(157, 243, 255);
+  border: 1px solid #e8e8e8;
+}
+
+.form_content_wrapper .font_header {
+  height: 20px;
+  float: left;
+  width: 99%;
+  padding: 15px 0 15px 10px;
+  border-bottom: 1px solid #f1eeee;
+  position: relative;
+  color: #474747;
+  font-size: 20px;
+}
+
+.font_header i {
+  margin-right: 5px
+}
+
+.form_content_wrapper .form_content {
+  float: left;
+  width: 97%;
+  padding: 25px;
+}
+
+.form_button_wrapper {
+  text-align: right;
+  width: 100%
+}
+
+.form_content_wrapper [type="submit"] {
+  margin: 5px;
+  height: 50px;
+  width: 180px;
+  background: #ce3434;
+  color: #fff;
+  border: 0;
+  cursor: pointer
+}
+
+.form_content_wrapper [type="reset"] {
+  margin: 5px;
+  height: 50px;
+  width: 180px;
+  background: #5a5555;
+  color: #fff;
+  border: 0;
+  cursor: pointer
+}
+
+.form_content_wrapper [type="submit"]:active,
+.form_content_wrapper [type="reset"]:active {
+  transform: translateY(4px);
+}
+
+.input-error {
+  border-bottom: 1px solid red !important;
+}
+
+@media screen and (max-width: 480px) {
+  .nav_bar_wrapper {
+    display: none
+  }
+}
+
+.metismenu {
+  font-size: 12pt;
+  overflow: hidden;
+  position: relative
+}
+
+.metismenu>.metismenu-container>.metismenu-item>.metismenu-link {
+  line-height: 3.5em
+}
+
+.metismenu>.metismenu-container>.metismenu-item>.metismenu-link .metismenu-state-icon {
+  line-height: 3.5em
+}
+
+.metismenu::after {
+  content: " ";
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0
+}
+
+.metismenu-container,
+.metismenu-item {
+  margin: 0;
+  padding: 0
+}
+
+.metismenu-container {
+  list-style: none
+}
+
+.metismenu-container .metismenu-container {
+  transition: padding .3s;
+  -webkit-transition: padding .3s;
+  background: rgba(255, 255, 255, .05)
+}
+
+.metismenu-container .metismenu-container .metismenu-item>.metismenu-link {
+  height: 0;
+  overflow: hidden
+}
+
+.metismenu-container .metismenu-container .metismenu-link {
+  padding-left: 1em
+}
+
+.metismenu-container .metismenu-container .metismenu-container .metismenu-link {
+  padding-left: 2em
+}
+
+.metismenu-container.visible {
+  padding: .5em 0
+}
+
+.metismenu-container.visible>.metismenu-item>.metismenu-link {
+  height: 2.5em
+}
+
+.metismenu-link {
+  color: #d4d4d4;
+  transition: height .3s, color .3s, background-color .3s;
+  -webkit-transition: height .3s, color .3s, background-color .3s;
+  display: block;
+  line-height: 3.5em;
+  text-decoration: none;
+}
+
+.metismenu-link:hover {
+  background: rgba(255, 255, 255, .05);
+  color: #f7f7f7
+}
+
+.metismenu-link.active {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  background: #ce3434;
+  color: #FFF
+}
+
+.metismenu-link.has-active-child {
+  color: #F53
+}
+
+I.metismenu-icon {
+  text-align: center;
+  width: 3em
+}
+
+I.metismenu-state-icon {
+  transition: transform .3s;
+  -webkit-transition: transform .3s;
+  float: right;
+  line-height: 2.5em;
+  text-align: center;
+  width: 3em
+}
+
+I.metismenu-state-icon.rotate-minus-90 {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg)
+}
