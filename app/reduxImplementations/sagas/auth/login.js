@@ -5,6 +5,7 @@ import ConstantBuilder from '../../constantBuilder'
 import ActionBuilder from '../../actionBuilder';
 import { logError } from '../../../utils/errorLog';
 import { callApi } from '../../../utils/request';
+import {  push } from 'react-router-redux';
 import uuid from 'node-uuid';
 
 const getStateData = (state) => Map(state.auth.login); 
@@ -60,6 +61,7 @@ export function* logOff() {
     while(true) {
 
         yield take(ConstantBuilder("AUTH", "LOGOFF"));
+        yield put(push("/"))
         yield put(ActionBuilder("AUTH", "USER_SET_FORM", { 'data':  { 'UserAuthenticated': false } }));
     }
 }

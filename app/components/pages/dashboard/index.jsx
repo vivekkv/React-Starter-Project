@@ -1,11 +1,12 @@
 import React from 'react';
+import AuthenticationComponent from '../../base/AuthenticationComponent';
 import { connect } from 'react-redux';
 import { Map } from 'immutable';
 import Header from './header';
 import Navigation from './navigation';
 import Styles from './styles.css';
 
-class Dashboard extends React.Component {
+class Dashboard extends AuthenticationComponent {
 
     render() {
 
